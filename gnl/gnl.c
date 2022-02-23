@@ -21,7 +21,7 @@ static char	*read_fd(int fd, char *s)
 	if (!tmp)
 		return (NULL);
 	count = 1;
-	while (!ft_strchr(s, '\n') && count)//카운트가 양수이면서 s에 엔터가 없을때 까지
+	while (!ft_strchr(s, '\n') && count)//카운트가 양수이면서 s에 엔터가 없면 진행
 	{
 		count = read(fd, tmp, BUFFER_SIZE);//리드 함수 읽은 것만큼 숫자 세고 나감
 		if (count == -1)//못 읽었을때
