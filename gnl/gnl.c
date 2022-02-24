@@ -107,3 +107,4 @@ char	*get_next_line(int	fd)//함수 시작
 	save = next_save(save);//짤린것 세이브
 	return (r);
 }
+1112
